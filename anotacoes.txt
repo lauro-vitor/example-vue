@@ -1,4 +1,5 @@
 Anotações olhar na documentação
+-Propriedades | props
 -o guia de estilos
 -reatividade
 -vuetify

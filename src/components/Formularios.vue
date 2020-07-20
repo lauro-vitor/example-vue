@@ -1,11 +1,14 @@
 <template>
     <div>
         <form action="" v-on:submit.prevent="submitForm()">
-            <input type="text" v-model="name" placeholder="nome">
+            <CustomInput placeHolder="nome" v-model="name"/>
+            <!-- <input type="text" v-model="name" placeholder="nome"> -->
             <p></p>
-            <input type="text" v-model="lastName" placeholder="sobre nome"> 
+            <CustomInput placeHolder="sobre nome" v-model="lastName" />
+            <!-- <input type="text" v-model="lastName" placeholder="sobre nome"> _-->
             <p></p>
-            <input type="text" v-model="email" placeholder="email@exemplo.com"/>
+            <CustomInput placeHolder="email@exemplo.com" v-model="email" />
+            <!-- <input type="text" v-model="email" placeholder="email@exemplo.com"/> -->
             <p></p>
             <select name="" id="" v-model="selectedState">
                 <option 
@@ -22,7 +25,11 @@
     </div>
 </template>
 <script>
+ import CustomInput from './CustomInput'
 export default {
+    components:{
+        CustomInput
+    },
     data: () => ({
         name: '',
         lastName: '',
