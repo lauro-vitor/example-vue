@@ -1,0 +1,4 @@
+Anotações olhar na documentação
+-o guia de estilos
+-reatividade
+-vuetify

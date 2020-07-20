@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Formularios />
+    <!-- <Todos /> -->
+    <!-- <Listas /> -->
+    <!-- <Cliente message="props"/> -->
+    <!-- <Condicional /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Formularios from './components/Formularios'
+//import Todos from './components/Todos'
+//import Listas from './components/Listas'
+//import Cliente from './components/Cliente'
+//import Whatch from './components/Whatch'
+//import Condicional from './components/Condicional'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Formularios
+    //Todos,
+    //Listas,
+     //Condicional,
+    //Cliente,
+    //Whatch,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
